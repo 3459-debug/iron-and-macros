@@ -1,0 +1,526 @@
+/* ==========================================================================
+   Iron & Macros - Main Stylesheet
+   Dark-mode gym theme:
+     Navy background  #0f172a
+     Slate cards      #1e293b
+     Sky blue accent  #38bdf8
+     White text       #ffffff
+   ========================================================================== */
+
+/* ---------- Reset & Base ---------- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Arial, sans-serif;
+  background-color: #0f172a;
+  color: #ffffff;
+  line-height: 1.6;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+a {
+  color: #38bdf8;
+  text-decoration: none;
+}
+
+/* ---------- Header ---------- */
+.site-header {
+  background-color: #1e293b;
+  border-bottom: 2px solid #38bdf8;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.header-inner {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0.75rem 1.25rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.logo-img {
+  width: 36px;
+  height: 36px;
+}
+
+.logo-text {
+  font-weight: 800;
+  letter-spacing: 2px;
+  color: #38bdf8;
+  text-shadow: 0 0 12px rgba(56, 189, 248, 0.6);
+}
+
+.main-nav {
+  display: flex;
+  gap: 1.25rem;
+}
+
+.nav-link {
+  color: #ffffff;
+  font-weight: 600;
+  padding: 0.25rem 0;
+  border-bottom: 2px solid transparent;
+  transition: color 0.2s, border-color 0.2s;
+}
+
+.nav-link:hover,
+.nav-link.active {
+  color: #38bdf8;
+  border-bottom-color: #38bdf8;
+}
+
+/* ---------- Buttons ---------- */
+.btn {
+  display: inline-block;
+  padding: 0.65rem 1.4rem;
+  border-radius: 8px;
+  font-weight: 700;
+  font-size: 1rem;
+  cursor: pointer;
+  border: 2px solid transparent;
+  transition: transform 0.15s, background-color 0.2s, color 0.2s;
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+}
+
+.btn-primary {
+  background-color: #38bdf8;
+  color: #0f172a;
+}
+
+.btn-primary:hover {
+  background-color: #7dd3fc;
+}
+
+.btn-outline {
+  border-color: #38bdf8;
+  color: #38bdf8;
+}
+
+.btn-outline:hover {
+  background-color: #38bdf8;
+  color: #0f172a;
+}
+
+.btn-block {
+  width: 100%;
+}
+
+.btn-sm {
+  padding: 0.35rem 0.8rem;
+  font-size: 0.85rem;
+}
+
+/* ---------- Hero ---------- */
+.hero {
+  padding: 3rem 1.25rem;
+  background: linear-gradient(180deg, #0f172a 0%, #1e293b 100%);
+}
+
+.hero-inner {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+}
+
+.hero-text {
+  flex: 1;
+}
+
+.hero-text h1 {
+  font-size: 2.4rem;
+  line-height: 1.2;
+  margin-bottom: 0.75rem;
+}
+
+.hero-sub {
+  color: #cbd5e1;
+  margin-bottom: 1.25rem;
+  max-width: 34rem;
+}
+
+.hero-stats {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.stat-chip {
+  background-color: rgba(56, 189, 248, 0.15);
+  border: 1px solid #38bdf8;
+  border-radius: 10px;
+  padding: 0.5rem 1.1rem;
+  text-align: center;
+}
+
+.stat-value {
+  display: block;
+  color: #38bdf8;
+  font-size: 1.4rem;
+  font-weight: 800;
+}
+
+.stat-label {
+  color: #cbd5e1;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.hero-actions {
+  display: flex;
+  gap: 1rem;
+}
+
+.hero-art {
+  flex: 1;
+}
+
+/* ---------- Layout Container ---------- */
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 2.5rem 1.25rem;
+}
+
+.section-title {
+  font-size: 1.6rem;
+  margin-bottom: 1.5rem;
+  color: #38bdf8;
+}
+
+/* ---------- Feature Cards ---------- */
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.25rem;
+}
+
+.feature-card {
+  background-color: #1e293b;
+  border: 1px solid #334155;
+  border-radius: 12px;
+  padding: 1.5rem;
+  color: #ffffff;
+  transition: border-color 0.2s, transform 0.15s;
+}
+
+.feature-card:hover {
+  border-color: #38bdf8;
+  transform: translateY(-3px);
+}
+
+.card-icon {
+  font-size: 1.8rem;
+  margin-bottom: 0.75rem;
+}
+
+.feature-card h3 {
+  color: #38bdf8;
+  margin-bottom: 0.5rem;
+}
+
+.feature-card p {
+  color: #cbd5e1;
+  font-size: 0.95rem;
+}
+
+/* ---------- Split Layout (main + sidebar) ---------- */
+.split-layout {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 2rem;
+  align-items: start;
+}
+
+.sidebar-panel {
+  background-color: #1e293b;
+  border: 1px solid #334155;
+  border-radius: 12px;
+  padding: 1.25rem;
+}
+
+.sidebar-panel h3 {
+  color: #38bdf8;
+  margin-bottom: 0.75rem;
+}
+
+.sidebar-panel label {
+  display: block;
+  font-size: 0.85rem;
+  color: #cbd5e1;
+  margin: 0.75rem 0 0.25rem;
+}
+
+.sidebar-panel input {
+  width: 100%;
+  padding: 0.5rem 0.65rem;
+  border-radius: 8px;
+  border: 1px solid #334155;
+  background-color: #0f172a;
+  color: #ffffff;
+}
+
+.sidebar-panel .btn {
+  margin-top: 1rem;
+}
+
+.quick-result {
+  margin-top: 1rem;
+  background-color: rgba(56, 189, 248, 0.12);
+  border-radius: 8px;
+  padding: 0.75rem;
+  text-align: center;
+}
+
+.quick-result strong {
+  color: #38bdf8;
+  font-size: 1.3rem;
+}
+
+.check-list {
+  margin: 1rem 0 0 1.25rem;
+  color: #cbd5e1;
+}
+
+.check-list li {
+  margin-bottom: 0.4rem;
+}
+
+/* ---------- Tables (workouts, meal log) ---------- */
+.data-table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #1e293b;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.data-table th,
+.data-table td {
+  padding: 0.65rem 0.9rem;
+  text-align: left;
+  border-bottom: 1px solid #334155;
+}
+
+.data-table th {
+  background-color: #334155;
+  color: #38bdf8;
+}
+
+.data-table tr:last-child td {
+  border-bottom: none;
+}
+
+/* ---------- Forms ---------- */
+.form-panel {
+  background-color: #1e293b;
+  border: 1px solid #334155;
+  border-radius: 12px;
+  padding: 1.5rem;
+  max-width: 560px;
+}
+
+.form-panel label {
+  display: block;
+  font-size: 0.9rem;
+  color: #cbd5e1;
+  margin: 0.9rem 0 0.3rem;
+}
+
+.form-panel input,
+.form-panel select,
+.form-panel textarea {
+  width: 100%;
+  padding: 0.55rem 0.7rem;
+  border-radius: 8px;
+  border: 1px solid #334155;
+  background-color: #0f172a;
+  color: #ffffff;
+  font-family: inherit;
+}
+
+.form-panel textarea {
+  min-height: 120px;
+  resize: vertical;
+}
+
+.form-panel .btn {
+  margin-top: 1.25rem;
+}
+
+.form-note {
+  font-size: 0.8rem;
+  color: #94a3b8;
+  margin-top: 0.75rem;
+}
+
+/* ---------- Result Panels ---------- */
+.result-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+.result-box {
+  background-color: rgba(56, 189, 248, 0.12);
+  border: 1px solid #38bdf8;
+  border-radius: 10px;
+  padding: 1rem;
+  text-align: center;
+}
+
+.result-box .value {
+  display: block;
+  font-size: 1.6rem;
+  font-weight: 800;
+  color: #38bdf8;
+}
+
+.result-box .unit {
+  font-size: 0.8rem;
+  color: #cbd5e1;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* ---------- Exercise Library ---------- */
+.filter-bar {
+  display: flex;
+  gap: 0.6rem;
+  margin-bottom: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.filter-btn {
+  background-color: #1e293b;
+  color: #cbd5e1;
+  border: 1px solid #334155;
+  border-radius: 999px;
+  padding: 0.4rem 1.1rem;
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.2s;
+}
+
+.filter-btn:hover {
+  border-color: #38bdf8;
+  color: #38bdf8;
+}
+
+.filter-btn.active {
+  background-color: #38bdf8;
+  color: #0f172a;
+  border-color: #38bdf8;
+}
+
+/* ---------- Workout Day Cards ---------- */
+.day-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.25rem;
+}
+
+.day-card {
+  background-color: #1e293b;
+  border: 1px solid #334155;
+  border-radius: 12px;
+  padding: 1.25rem;
+}
+
+.day-card h3 {
+  color: #38bdf8;
+  margin-bottom: 0.25rem;
+}
+
+.day-card .day-tag {
+  display: inline-block;
+  font-size: 0.75rem;
+  background-color: #334155;
+  color: #cbd5e1;
+  border-radius: 999px;
+  padding: 0.15rem 0.7rem;
+  margin-bottom: 0.75rem;
+}
+
+.exercise-row {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  padding: 0.35rem 0;
+  border-bottom: 1px dashed #334155;
+}
+
+.exercise-row:last-child {
+  border-bottom: none;
+}
+
+.exercise-row input[type="checkbox"] {
+  accent-color: #38bdf8;
+  width: 1.05rem;
+  height: 1.05rem;
+}
+
+.exercise-row.done label {
+  text-decoration: line-through;
+  color: #64748b;
+}
+
+/* ---------- Footer ---------- */
+.site-footer {
+  background-color: #1e293b;
+  border-top: 2px solid #38bdf8;
+  margin-top: 2rem;
+}
+
+.footer-inner {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 1.25rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  color: #94a3b8;
+}
+
+.footer-nav {
+  display: flex;
+  gap: 1rem;
+}
+
+.footer-nav a {
+  color: #94a3b8;
+  font-size: 0.85rem;
+}
+
+.footer-nav a:hover {
+  color: #38bdf8;
+}

@@ -1,0 +1,105 @@
+/* ==========================================================================
+   Iron & Macros - Responsive Stylesheet
+   Breakpoints for tablet and phone layouts.
+   ========================================================================== */
+
+/* ---------- Menu toggle hidden on desktop ---------- */
+.menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0.5rem;
+}
+
+.menu-toggle span {
+  display: block;
+  width: 24px;
+  height: 3px;
+  background-color: #38bdf8;
+  margin: 5px 0;
+  border-radius: 2px;
+  transition: transform 0.25s, opacity 0.25s;
+}
+
+/* ---------- Tablet: <= 900px ---------- */
+@media (max-width: 900px) {
+  .hero-inner {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero-sub {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .hero-stats,
+  .hero-actions {
+    justify-content: center;
+  }
+
+  .card-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .split-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .result-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .day-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ---------- Phone: <= 640px ---------- */
+@media (max-width: 640px) {
+  .menu-toggle {
+    display: block;
+  }
+
+  .main-nav {
+    position: fixed;
+    top: 64px;
+    right: -100%;
+    width: 70%;
+    max-width: 280px;
+    flex-direction: column;
+    background-color: #1e293b;
+    border-left: 2px solid #38bdf8;
+    border-bottom: 2px solid #38bdf8;
+    padding: 1.25rem;
+    gap: 1rem;
+    transition: right 0.3s ease;
+  }
+
+  .main-nav.open {
+    right: 0;
+  }
+
+  .card-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .result-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-text h1 {
+    font-size: 1.7rem;
+  }
+
+  .footer-inner {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .data-table {
+    display: block;
+    overflow-x: auto;
+  }
+}

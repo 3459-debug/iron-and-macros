@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Iron &amp; Macros | Workout Splits</title>
+  <meta name="description" content="6-day push/pull/legs split planner with cardio and StairMaster logging.">
+  <link rel="icon" href="images/logo.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles/main.css">
+  <link rel="stylesheet" href="styles/responsive.css">
+</head>
+<body>
+
+  <!-- ======= HEADER ======= -->
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="index.html" class="logo">
+        <img src="images/logo.svg" alt="Iron and Macros barbell logo" class="logo-img">
+        <span class="logo-text">IRON &amp; MACROS</span>
+      </a>
+      <nav class="main-nav" id="mainNav">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="workouts.html" class="nav-link active">Workouts</a>
+        <a href="macros.html" class="nav-link">Macros</a>
+        <a href="exercises.html" class="nav-link">Exercises</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </nav>
+      <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ======= PAGE INTRO ======= -->
+  <main class="container">
+    <h1 class="section-title">6-Day PPL Split</h1>
+    <p class="page-intro">
+      Push, Pull, Legs repeated twice per week. Check off lifts as you finish them —
+      your progress is saved in this browser.
+    </p>
+
+    <!-- ======= WORKOUT DAYS ======= -->
+    <div class="day-grid" id="dayGrid">
+
+      <div class="day-card" data-day="1">
+        <h3>Push Day A</h3>
+        <span class="day-tag">Day 1</span>
+        <div class="exercise-row"><input type="checkbox" id="p1"><label for="p1">Bench Press &mdash; 4x6</label></div>
+        <div class="exercise-row"><input type="checkbox" id="p2"><label for="p2">Overhead Press &mdash; 3x8</label></div>
+        <div class="exercise-row"><input type="checkbox" id="p3"><label for="p3">Incline Dumbbell Press &mdash; 3x10</label></div>
+        <div class="exercise-row"><input type="checkbox" id="p4"><label for="p4">Tricep Pushdowns &mdash; 3x12</label></div>
+        <div class="exercise-row"><input type="checkbox" id="p5"><label for="p5">Lateral Raises &mdash; 4x15</label></div>
+      </div>
+
+      <div class="day-card" data-day="2">
+        <h3>Pull Day A</h3>
+        <span class="day-tag">Day 2</span>
+        <div class="exercise-row"><input type="checkbox" id="pu1"><label for="pu1">Deadlift &mdash; 3x5</label></div>
+        <div class="exercise-row"><input type="checkbox" id="pu2"><label for="pu2">Barbell Rows &mdash; 4x8</label></div>
+        <div class="exercise-row"><input type="checkbox" id="pu3"><label for="pu3">Lat Pulldowns &mdash; 3x10</label></div>
+        <div class="exercise-row"><input type="checkbox" id="pu4"><label for="pu4">Face Pulls &mdash; 3x15</label></div>
+        <div class="exercise-row"><input type="checkbox" id="pu5"><label for="pu5">Barbell Curls &mdash; 3x12</label></div>
+      </div>
+
+      <div class="day-card" data-day="3">
+        <h3>Legs Day A</h3>
+        <span class="day-tag">Day 3</span>
+        <div class="exercise-row"><input type="checkbox" id="l1"><label for="l1">Squats &mdash; 4x6</label></div>
+        <div class="exercise-row"><input type="checkbox" id="l2"><label for="l2">Romanian Deadlifts &mdash; 3x8</label></div>
+        <div class="exercise-row"><input type="checkbox" id="l3"><label for="l3">Leg Press &mdash; 3x12</label></div>
+        <div class="exercise-row"><input type="checkbox" id="l4"><label for="l4">Leg Curls &mdash; 3x12</label></div>
+        <div class="exercise-row"><input type="checkbox" id="l5"><label for="l5">Calf Raises &mdash; 4x15</label></div>
+      </div>
+
+      <div class="day-card" data-day="4">
+        <h3>Push Day B</h3>
+        <span class="day-tag">Day 4</span>
+        <div class="exercise-row"><input type="checkbox" id="p6"><label for="p6">Overhead Press &mdash; 4x6</label></div>
+        <div class="exercise-row"><input type="checkbox" id="p7"><label for="p7">Flat Dumbbell Press &mdash; 3x10</label></div>
+        <div class="exercise-row"><input type="checkbox" id="p8"><label for="p8">Cable Flyes &mdash; 3x12</label></div>
+        <div class="exercise-row"><input type="checkbox" id="p9"><label for="p9">Dips &mdash; 3x10</label></div>
+        <div class="exercise-row"><input type="checkbox" id="p10"><label for="p10">Cable Lateral Raises &mdash; 4x15</label></div>
+      </div>
+
+      <div class="day-card" data-day="5">
+        <h3>Pull Day B</h3>
+        <span class="day-tag">Day 5</span>
+        <div class="exercise-row"><input type="checkbox" id="pu6"><label for="pu6">Weighted Pull-Ups &mdash; 4x6</label></div>
+        <div class="exercise-row"><input type="checkbox" id="pu7"><label for="pu7">Chest-Supported Rows &mdash; 3x10</label></div>
+        <div class="exercise-row"><input type="checkbox" id="pu8"><label for="pu8">Single-Arm Rows &mdash; 3x12</label></div>
+        <div class="exercise-row"><input type="checkbox" id="pu9"><label for="pu9">Hammer Curls &mdash; 3x12</label></div>
+        <div class="exercise-row"><input type="checkbox" id="pu10"><label for="pu10">Rear Delt Flyes &mdash; 3x15</label></div>
+      </div>
+
+      <div class="day-card" data-day="6">
+        <h3>Legs Day B</h3>
+        <span class="day-tag">Day 6</span>
+        <div class="exercise-row"><input type="checkbox" id="l6"><label for="l6">Front Squats &mdash; 4x6</label></div>
+        <div class="exercise-row"><input type="checkbox" id="l7"><label for="l7">Hip Thrusts &mdash; 3x8</label></div>
+        <div class="exercise-row"><input type="checkbox" id="l8"><label for="l8">Walking Lunges &mdash; 3x12</label></div>
+        <div class="exercise-row"><input type="checkbox" id="l9"><label for="l9">Leg Extensions &mdash; 3x12</label></div>
+        <div class="exercise-row"><input type="checkbox" id="l10"><label for="l10">Seated Calf Raises &mdash; 4x15</label></div>
+      </div>
+
+    </div>
+
+    <!-- ======= CARDIO LOG ======= -->
+    <section id="cardio" class="cardio-section">
+      <h2 class="section-title">Cardio &amp; StairMaster Log</h2>
+      <div class="form-panel">
+        <label for="cardioType">Type</label>
+        <select id="cardioType">
+          <option>StairMaster</option>
+          <option>Incline Walk</option>
+          <option>Stationary Bike</option>
+          <option>Rowing Machine</option>
+        </select>
+        <label for="cardioMinutes">Minutes</label>
+        <input type="number" id="cardioMinutes" min="1" max="180" value="20">
+        <label for="cardioCalories">Calories Burned (est.)</label>
+        <input type="number" id="cardioCalories" min="0" max="2000" value="180">
+        <button class="btn btn-primary" id="addCardioBtn">Add Session</button>
+      </div>
+      <table class="data-table" id="cardioTable" style="margin-top:1.5rem;">
+        <thead>
+          <tr><th>Date</th><th>Type</th><th>Minutes</th><th>Calories</th><th></th></tr>
+        </thead>
+        <tbody><!-- rows added by workout-log.js --></tbody>
+      </table>
+    </section>
+  </main>
+
+  <!-- ======= FOOTER ======= -->
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <p>Copyright 2026 | Iron &amp; Macros | CIS 332</p>
+      <nav class="footer-nav">
+        <a href="index.html">Home</a>
+        <a href="workouts.html">Workouts</a>
+        <a href="macros.html">Macros</a>
+        <a href="exercises.html">Exercises</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </footer>
+
+  <script src="scripts/app.js"></script>
+  <script src="scripts/workout-log.js"></script>
+</body>
+</html>

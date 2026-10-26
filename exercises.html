@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Iron &amp; Macros | Exercise Library</title>
+  <meta name="description" content="Upper body and lower body exercise library with filters.">
+  <link rel="icon" href="images/logo.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles/main.css">
+  <link rel="stylesheet" href="styles/responsive.css">
+</head>
+<body>
+
+  <!-- ======= HEADER ======= -->
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="index.html" class="logo">
+        <img src="images/logo.svg" alt="Iron and Macros barbell logo" class="logo-img">
+        <span class="logo-text">IRON &amp; MACROS</span>
+      </a>
+      <nav class="main-nav" id="mainNav">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="workouts.html" class="nav-link">Workouts</a>
+        <a href="macros.html" class="nav-link">Macros</a>
+        <a href="exercises.html" class="nav-link active">Exercises</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </nav>
+      <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main class="container">
+    <h1 class="section-title">Exercise Library</h1>
+    <p class="page-intro">
+      Reference lifts used across the split. Filter by category.
+    </p>
+
+    <!-- ======= FILTERS ======= -->
+    <div class="filter-bar" id="filterBar">
+      <button class="filter-btn active" data-filter="all">All Lifts</button>
+      <button class="filter-btn" data-filter="upper">Upper Body</button>
+      <button class="filter-btn" data-filter="lower">Lower Body</button>
+    </div>
+
+    <!-- ======= LIBRARY ======= -->
+    <div class="card-grid" id="exerciseGrid">
+
+      <div class="feature-card" data-cat="upper">
+        <div class="card-icon">&#128170;</div>
+        <h3>Bench Press</h3>
+        <p>Horizontal press targeting chest, front delts, and triceps. Primary heavy push movement.</p>
+      </div>
+
+      <div class="feature-card" data-cat="upper">
+        <div class="card-icon">&#128170;</div>
+        <h3>Overhead Press</h3>
+        <p>Vertical press for shoulders and triceps. Performed standing with a barbell.</p>
+      </div>
+
+      <div class="feature-card" data-cat="upper">
+        <div class="card-icon">&#129461;</div>
+        <h3>Deadlift</h3>
+        <p>Posterior chain hinge. Hits back, glutes, and hamstrings as the main pull day anchor.</p>
+      </div>
+
+      <div class="feature-card" data-cat="upper">
+        <div class="card-icon">&#129353;</div>
+        <h3>Weighted Pull-Ups</h3>
+        <p>Vertical pull for lats and biceps. Add weight once bodyweight sets exceed 10 reps.</p>
+      </div>
+
+      <div class="feature-card" data-cat="upper">
+        <div class="card-icon">&#129353;</div>
+        <h3>Barbell Rows</h3>
+        <p>Horizontal pull for mid-back thickness. Keep torso around 45 degrees.</p>
+      </div>
+
+      <div class="feature-card" data-cat="upper">
+        <div class="card-icon">&#9996;</div>
+        <h3>Lateral Raises</h3>
+        <p>Isolation for side delts. Light weight, high reps, strict form.</p>
+      </div>
+
+      <div class="feature-card" data-cat="lower">
+        <div class="card-icon">&#129460;</div>
+        <h3>Back Squats</h3>
+        <p>Primary lower body strength movement. Quads, glutes, and core stability.</p>
+      </div>
+
+      <div class="feature-card" data-cat="lower">
+        <div class="card-icon">&#129460;</div>
+        <h3>Front Squats</h3>
+        <p>Quad-dominant squat variation with upright torso demand.</p>
+      </div>
+
+      <div class="feature-card" data-cat="lower">
+        <div class="card-icon">&#129461;</div>
+        <h3>Romanian Deadlifts</h3>
+        <p>Hamstring and glute hinge with controlled eccentric emphasis.</p>
+      </div>
+
+      <div class="feature-card" data-cat="lower">
+        <div class="card-icon">&#9876;</div>
+        <h3>Hip Thrusts</h3>
+        <p>Glute-focused hip extension. Drive through heels, squeeze at the top.</p>
+      </div>
+
+      <div class="feature-card" data-cat="lower">
+        <div class="card-icon">&#128096;</div>
+        <h3>Walking Lunges</h3>
+        <p>Unilateral leg work for quads, glutes, and balance.</p>
+      </div>
+
+      <div class="feature-card" data-cat="lower">
+        <div class="card-icon">&#128096;</div>
+        <h3>Calf Raises</h3>
+        <p>Standing and seated variations. Pause at the top, full stretch at the bottom.</p>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- ======= FOOTER ======= -->
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <p>Copyright 2026 | Iron &amp; Macros | CIS 332</p>
+      <nav class="footer-nav">
+        <a href="index.html">Home</a>
+        <a href="workouts.html">Workouts</a>
+        <a href="macros.html">Macros</a>
+        <a href="exercises.html">Exercises</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </footer>
+
+  <script src="scripts/app.js"></script>
+</body>
+</html>

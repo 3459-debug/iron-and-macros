@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Iron &amp; Macros | Contact &amp; About</title>
+  <meta name="description" content="About the creator and user feedback form for Iron & Macros.">
+  <link rel="icon" href="images/logo.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles/main.css">
+  <link rel="stylesheet" href="styles/responsive.css">
+</head>
+<body>
+
+  <!-- ======= HEADER ======= -->
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="index.html" class="logo">
+        <img src="images/logo.svg" alt="Iron and Macros barbell logo" class="logo-img">
+        <span class="logo-text">IRON &amp; MACROS</span>
+      </a>
+      <nav class="main-nav" id="mainNav">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="workouts.html" class="nav-link">Workouts</a>
+        <a href="macros.html" class="nav-link">Macros</a>
+        <a href="exercises.html" class="nav-link">Exercises</a>
+        <a href="contact.html" class="nav-link active">Contact</a>
+      </nav>
+      <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main class="container">
+    <div class="split-layout">
+
+      <!-- ======= ABOUT ======= -->
+      <div class="split-main">
+        <h1 class="section-title">About Iron &amp; Macros</h1>
+        <p>
+          Iron &amp; Macros is a class project for CIS 332, built as a weekly
+          workout and nutrition tracker for lifters running a 6-day
+          push/pull/legs split.
+        </p>
+        <p style="margin-top:0.75rem;">
+          The site keeps everything a lifter needs in one place: the split
+          planner with completion checkoffs, a daily macro calculator, a meal
+          log built around high-protein staples, a cardio log, and a reference
+          exercise library.
+        </p>
+
+        <h2 class="section-title" style="margin-top:2rem;">Creator Info</h2>
+        <ul class="check-list">
+          <li><strong>Project:</strong> Iron &amp; Macros &mdash; CIS 332</li>
+          <li><strong>Purpose:</strong> Track lifts, macros, and cardio in one dashboard</li>
+          <li><strong>Stack:</strong> HTML5, external CSS, and vanilla JavaScript</li>
+          <li><strong>Hosting:</strong> GitHub Pages</li>
+        </ul>
+      </div>
+
+      <!-- ======= FEEDBACK FORM ======= -->
+      <aside class="sidebar-panel">
+        <h3>User Feedback</h3>
+        <form class="feedback-form" id="feedbackForm">
+          <label for="fbName">Name</label>
+          <input type="text" id="fbName" placeholder="Your name" required>
+
+          <label for="fbEmail">Email</label>
+          <input type="email" id="fbEmail" placeholder="you@example.com" required>
+
+          <label for="fbTopic">Topic</label>
+          <select id="fbTopic">
+            <option>General feedback</option>
+            <option>Bug report</option>
+            <option>Feature request</option>
+            <option>Workout split question</option>
+            <option>Macro calculator question</option>
+          </select>
+
+          <label for="fbMessage">Message</label>
+          <textarea id="fbMessage" placeholder="What's on your mind?" required></textarea>
+
+          <button type="submit" class="btn btn-primary btn-block">Send Feedback</button>
+          <p class="form-note" id="fbNote">
+            Note: this demo form saves a local draft only &mdash; no email is sent.
+          </p>
+        </form>
+      </aside>
+
+    </div>
+  </main>
+
+  <!-- ======= FOOTER ======= -->
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <p>Copyright 2026 | Iron &amp; Macros | CIS 332</p>
+      <nav class="footer-nav">
+        <a href="index.html">Home</a>
+        <a href="workouts.html">Workouts</a>
+        <a href="macros.html">Macros</a>
+        <a href="exercises.html">Exercises</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </footer>
+
+  <script src="scripts/app.js"></script>
+</body>
+</html>
