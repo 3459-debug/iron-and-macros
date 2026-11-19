@@ -41,4 +41,19 @@
   if (yearEl && yearEl.textContent.indexOf("2026") === -1) {
     // keep the static 2026 for the assignment, no-op otherwise
   }
+
+  /* ---------- Exercise library filters (exercises.html) ---------- */
+  var filterBtns = document.querySelectorAll(".filter-btn");
+  var cards = document.querySelectorAll("#exerciseGrid .feature-card");
+  filterBtns.forEach(function (btn) {
+    btn.addEventListener("click", function () {
+      var filter = btn.getAttribute("data-filter");
+      filterBtns.forEach(function (b) { b.classList.remove("active"); });
+      btn.classList.add("active");
+      cards.forEach(function (card) {
+        var show = filter === "all" || card.getAttribute("data-cat") === filter;
+        card.style.display = show ? "" : "none";
+      });
+    });
+  });
 })();
